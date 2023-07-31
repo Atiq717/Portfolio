@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo-blue.png" alt="M.Khan" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am <span>Mohammed</span><br><span class="second-header">Khan</span> From The UK</h1>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="btn">C.V</a>
+                <a href="#" class="btn">GIT Hub</a>
+            </div>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/picture.png" alt="picture">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About <span>Me!</span></h2>
+                    <p>My personal strengths include determination, generosity, and consideration for others. I am a hardworking individual, who is trustworthy with a warm personality. I am highly confident and have the ability to work on my own as well as a team. I have the right attitude, aptitude and charisma to be successful in the position given. I have innovative ideas and a strong understanding of what stakeholders are requesting. I am a hardworking individual with excellent communication skills and I am comfortable communicating at all levels. I am determined to achieve my goals, willing to persist with tasks and new challenges, with an urge to succeed and make a positive impact within the work place.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developenent</span><br>Web App Developenent</li>
+                            <li><span>Multi Language Programming</span><br>HTML, CSS, JavaScript, Python, PHP </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Village Lodge Restaurant</span><br>Manager Head waiter Book keeping Payroll <br>2020 - Present</li>
+                            <li><span>Accountants FOr Professionals</span><br>Accounts Assistance, Payroll Manager, Account Preperations, VAT Returns <br>2017 - 2020</li>
+                            <li><span>Black Book Accountants</span><br>Accounts Assistance, Payroll Manager, Account Preperations, VAT Returns <br> 2012 - 2017</li>
+                            <li><span>Tesco Distribution</span><br>Systems Clerk, Goods-in, Warehouse Operative <br> 2008 - 2011</li>
+                            <li><span>Laboni Restaurant</span><br>Waiter, Sales and Marketing <br> 2005 - 2008</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Codecademy</span><br>Full Stack Engineer, PHP, Bootstrap, Python, jQuery <br> 2023</li>
+                            <li><span>Netcom Training</span><br>CompTia A+ <br>Networking and Architecture, Mobile and Operating Systems, Cloud Services, Business Processes <br> Cisco: IT Essentials, Cyber Security <br> 2021</li>
+                            <li><span>Sutton Coldfield College</span><br>AAT Acounting, A Level Accounts</li>
+                            <li><span>Joseph Leckie CTC</span><br>GCSE: English, Mathematics, Science, ICT</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript <span>55%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Python <span>55%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+            </div>    
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" name="Submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>2023 By Mohammed Khan | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><em style='font-size:24px' class='far'> &#8593;</em></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js">
+    </script>
+</body>
+<script> </script>
+</html>
