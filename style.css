@@ -16,6 +16,9 @@ body{
     background-position: center;
     opacity: 1;
 }
+.header-text-1{
+    display: none;
+}
 #container{
     padding: 10px 10%;
 }
@@ -149,7 +152,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
     color: #fff;
 }
@@ -164,11 +167,12 @@ nav ul li a:hover::after{
     margin: 20px 0 40px;
 }
 .tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
     position: relative;
+    color: #fff;
 }
 
 .tab-links::after{
@@ -206,7 +210,15 @@ nav ul li a:hover::after{
     padding-bottom: 7rem;
     background: #000;
 }
+.skills .heading{
+    margin: 0.5rem;
+    font-size: 3rem;
+}
 
+.skills .heading span{
+    color: #0039a6;
+    -webkit-text-stroke: 0.2px #fff;
+}
 .skills-column .title{
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
@@ -355,7 +367,7 @@ nav ul li a:hover::after{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    margin-top: 15%;
+    margin-top: 25%;
     background-color: #002147;
 }
 
@@ -396,4 +408,99 @@ nav ul li a:hover::after{
     font-weight: 1000;
     color: #000;
     text-decoration: none;
+}
+
+@media only screen and (max-width:425px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header ul{
+        display: none;
+    }
+    .header .header-text{
+        font-size: 1rem;
+        padding-top: 10%;
+    }
+    .header .header-text span{
+        font-size: 1.5rem;
+    }
+    .header-text{
+        display: none;
+    }
+    .header-text-1{
+        display: block;
+    }
+    .header-text-1 span{
+        color: #0039a6;
+        font-size: 3rem;
+        -webkit-text-stroke: 0.2px #fff;
+
+    }
+    .btn-box{
+        position: relative;
+        display: flex;
+        justify-content: start;
+        gap: 5%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    
+    .btn-box .btn{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        margin: 5% 0;
+        height: 100%;
+        background: transparent;
+        border: 0.2rem solid #0039a6;
+        border-radius: 0.8rem;
+        -webkit-text-stroke: 2px gray;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        color: #002147;
+        text-decoration: none;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .btn-box .btn::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #002147;
+        z-index: -1;
+        transition: 0.5s;
+        opacity: 0.9;
+     }
+    
+     .btn-box .btn:hover::before{
+        width: 100%;
+     }
+     .about{
+        margin-top: 500px;
+    }
+    .sub-title{
+        font-size: 3rem;
+    }
+    .para{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .tab-titles{
+    }
+    .contact btn{
+    }
+    .footer-text{
+        margin: 10px;
+    }
+    .footer-iconTop{
+        margin: 10px;
+    }
 }
